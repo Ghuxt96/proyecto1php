@@ -2,7 +2,12 @@
 <html lang= "es">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sin título</title>
+<title>Area de un </title>
+<!DOCTYPE html>
+<html lang= "es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>hipotenusa de un triangulo rectangulo</title>
 <style type="text/css">
 #form1 p {
 	text-align: center;
@@ -12,9 +17,9 @@
 </head>
 
 <body>
-<form id="form1" name="form1" method="post" action="raiz.php">
+<form id="form1" name="form1" method="post" action="hipotenusa.php">
 
-<p>Programa que calcule la hipotenusa de un triangulo rectangulo</p>
+<p>INGRESE LOS DATOS</p>
 <table width="412" border="0" align="center">
   <tr>
     <td colspan="2"><center>
