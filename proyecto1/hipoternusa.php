@@ -2,58 +2,34 @@
 <html lang= "es">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Area de un </title>
-<!DOCTYPE html>
-<html lang= "es">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>hipotenusa de un triangulo rectangulo</title>
-<style type="text/css">
-#form1 p {
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-}
-</style>
-</head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximun-sacle=1.0, minimun-scale=1.0"></head>
+<link rel="stylesheet" href="css/style.css">
 
 <body>
-<form id="form1" name="form1" method="post" action="hipotenusa.php">
+<div class="contenedor">
+<form  id="form1" name="form1" method="post" action="hipotenusa.php" class="form">
+<div class="form-header">
+<h1 class="form-tittle"><span>INGRESE LOS DATOS<span></h1>
 
-<p>INGRESE LOS DATOS</p>
-<table width="412" border="0" align="center">
-  <tr>
-    <td colspan="2"><center>
-      <p>CALCULO</p>
-    </center></td>
-  </tr>
-  <tr>
-    <td width="143">CATETO A:</td>
-    <td width="253"><label for="a"></label>
-    <input type="text" name="a" id="a" /></td>
-  </tr>
-  <tr>
-    <td>CATETO B:</td>
-    <td><label for="textfield2"></label>
-    <input type="text" name="b" id="textfield2" /></td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td colspan="2"><input type="submit" name="button" id="button" value="Calcular" /></td>
-  </tr>
-</table>
-<p>&nbsp;</p>
+    <label form="Cateto A" class="form-label" width="143" >CATETO ADYACENTE</label> 
+    <input type="text"  class="form-input" name="a" id="a" placeholder="ingrese los datos"></td>
+
+    <label form="Cateto B" class="form-label" width="143" >CATETO OPUESTO</label> 
+    <input type="text" class="form-input" name="b" id="textfield2"placeholder="ingrese los datos" >
+
+    <input type="submit" class="btn-submit" name="button" id="button" value="Calcular" />
+
 </form>
 </body>
 </html>
 
+<p>&nbsp;</p>
 <?php
 error_reporting(0);
 $a = $_POST['a'];
 $b = $_POST['b'];
-$mensaje = "La hipotenusa es : ";
+$mensaje = "La hipotenusa es de: ";
 $raiz;
 $cuadrado;
 $cuadrado = pow($a, 2) + pow($b, 2);
